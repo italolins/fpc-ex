@@ -3,7 +3,8 @@
 Converta o algoritmo paralelo de ordenação abaixo, baseado em memória compartilhada, para um modelo baseado em comunicação. Escolha livremente a linguagem usada.
 
 ```java
-private static int[] privateData;
+public class ParallelSorting {
+    private static int[] privateData;
     private final static boolean UP = true, DOWN = false;
 
     /**
@@ -80,4 +81,5 @@ private static int[] privateData;
             ParallelSort.parallelSort(min, max, dir, level);
         }
     }
+}
 ```
